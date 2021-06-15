@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join_Activity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <EditText
+        android:id="@+id/join_edt_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="id입력"
+        android:layout_margin="20dp"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 중복 확인"
+        android:id="@+id/id_check_btn"/>
+
+</LinearLayout>
+    <EditText
+        android:id="@+id/join_edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pw입력"
+        android:layout_margin="20dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/join_edt_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임입력"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/join_edt_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="주소 입력"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/join_edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="age입력"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="남"
+            android:id="@+id/chk_m"
+            android:checked="true"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="여"
+            android:id="@+id/chk_w"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="가입하기"
+        android:id="@+id/join_btn_join"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="취소하기"
+        android:id="@+id/join_btn_cancel"
+        android:textSize="20dp"/>
+
+</LinearLayout>
